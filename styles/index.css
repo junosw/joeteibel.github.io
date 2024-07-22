@@ -1,0 +1,80 @@
+:root {
+	--max-content-width: 900px;
+	--default-content-width: 90%;
+	--background-color: #e9e7e7;
+	--img-header-gradient-ht: 24px;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: var(--background-color);
+	line-height: 1.5em;
+}
+
+.page-container {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 128px;
+
+}
+
+.header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	max-width: var(--max-content-width);
+	width: var(--default-content-width);
+	height: 64px;
+}
+
+.content-container {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	max-width: var(--max-content-width);
+	width: var(--default-content-width);
+}
+
+.img-header-container {
+	max-width: var(--max-content-width);
+	width: 100%;
+	position: relative;
+}
+
+.header-img {
+	width: 100%;
+}
+
+.img-header-gradient-top {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: var(--img-header-gradient-ht);
+	background: linear-gradient(var(--background-color), transparent);
+}
+
+.img-header-gradient-bottom {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: var(--img-header-gradient-ht);
+	background: linear-gradient(transparent, var(--background-color));
+}
+
+.linkdin-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}

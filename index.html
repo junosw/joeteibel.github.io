@@ -1,7 +1,288 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="./styles/index.css">
+	<link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello world</h1>
+	<div class="page-container">
+		<div class="header">
+			<div>
+				<span class="roboto-medium">Joe Teibel</span>
+				<span class="roboto-light text-muted">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<span class="roboto-light text-muted">Software engineering</span>
+			</div>
+			<div class="flex-row">
+				<a href="mailto:joeteibel@gmail.com">
+					<i class="bi-envelope"></i>
+				</a>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<a href="https://www.linkedin.com/in/joe-teibel-407893156">
+					<img class="linkdin-icon" src="./images/linkdin-icon.png" alt="LinkedIn">
+				</a>
+			</div>
+		</div>
+		<div class="content-container">
+			<div class="img-header-container">
+				<div class="img-header-gradient-top"></div>
+				<img class="header-img" src="./images/projects-header.png" alt="Projects">
+				<div class="img-header-gradient-bottom"></div>
+			</div>
+
+			<h1>A narrative history of software projects</h1>
+			<p>
+				Hello, I'm Joe. For over twenty years I've been a software engineer and over the last seven, a manager, product designer, business strategist and company leader.
+			</p>
+			<p>
+				Thinking about the projects I've worked on over the years,
+				I realized the further back in time, the fewer details I remember. Turns out human memory is lossy, go figure. Recently, I started thinking about all the details...
+				essentially reminiscing about all of the stuff I've worked on and the
+				great people I've worked with since graduating with my software degree. It was a fun trip down memory lane.
+				I decided to capture those details here so perhaps in the future I can come back and reminisce some more. In the meantime, this is a version of my resume in story form.
+			</p>
+
+			<h2>SketchDeck, 2017 - current</h2>
+
+			<p>
+				SketchDeck is a graphic design service that leverages a web app to enable collaboration between our clients and our project managers and design teams.
+				I was initially hired as a senior dev and two months after starting, was promoted to "Head of Product and Engineering" when the CTO left the company.
+				This is the position I've held since 2017 and it has been a wonderful experience that I've thoroughly enjoyed and have learned a lot along the way.
+				My position is essentially a "working management" position with 50% of my time spent on team management, product planning and strategy and 50% spent on development work.
+				The exact ratios vary week to week depending on what's going on. Some weeks planning, strategy and communications can take up the majority of my time and other
+				weeks I'll have highly focused development time for several days in a row. I really love the variety and the challenges that come along with
+				the responsibilities and I'm grateful to be working with a great team.
+			</p>
+
+			<p>
+				"The platform" (as we lovingly call our web app at SketchDeck) is a web application built on Angular and Node on top of Firebase as our primary DB.
+				We are hosted in AWS and use all the most popular services including SQL for much of our analytics. Everyone on the dev team is a full
+				stack developer in every sense of the word. We spend a lot of time building new features to bring more value to our clients and our internal teams
+				and each dev is highly involved in each feature from ideation to production release. We have a fully automated CI/CD pipeline and we typically do
+				several releases a day (every thing from minor bug fixes/tweaks to incremental releases toward bigger features).
+			</p>
+
+			<p>
+				The platform is primarily a project-centric design collaboration tool for our clients and a project and task management tool for our internal design teams.
+				The application does all of the things you would expect for a project management tool but our unique value is providing tools for
+				giving and receiving feedback and iterating on a design project. This is primarily done by rendering "previews" of design files
+				in the browser and allowing clients/users to "pin" comments on the design to provide feedback and iterate toward a finished product they'll
+				be happy with. Packaging that up with customer service by our project managers and great designers around the world,
+				the software is a key differentiator for SketchDeck vs more traditional design agencies.
+			</p>
+
+			<h2>Node & Frontend, 2017</h2>
+
+			<p>
+				Node had been on my radar for several years and I'd been interested in learning it primarily because several developers
+				I had a lot of respect for loved it. Combined with the fact that I was developing a strong desire to work on a frontend project
+				(I'd been backend exclusive for a couple years at this point and was feeling the urge to level up my full stack game), I decided to dive into learning Node and React.</p>
+
+			<p>
+				I'd been planning to build a retirement calculator (just a personal project) for a while and decided to jump in on that with React.
+				It took me about a month of reading, experimenting and playing around in my free time to get the mental model for React (with Redux and React-router)
+				built in my head and feel like I "got it". Over summer and into the fall of 2017 I built the calculator and got my first 100%
+				remote position with a Utah-based company building SaaS for higher ed with Node and React.
+
+			<p>
+				I learned a ton about Javascript and front-end dev in 2017 and I've really enjoyed it.
+				The Javascript world had evolved enormously over the prior five years and front-end development simply isn't what it was in the 2000's.
+				And it was far better. The tooling and testing evolution combined with the ability to leverage the same language on the front and backend and,
+				well, I'm a huge fan of the whole Javascript eco system.
+			</p>
+
+			<h2>Metrics, 2016-2017</h2>
+
+			<p>
+				Metrics are pervasive in software, as they should be. Everyone needs metrics for technical feedback and to understand the customer and the business.
+				Fundamentally, every metrics solution involves creating a funnel or pipeline architecture where data comes in from many sources and
+				flows to a data storage backend from which other tools can be used to read and understand the data. There are myriad ways to implement this architecture.
+				Typically the implementation is driven by the technology and tools already being used by your software solution. It was no different at Nike.
+			</p>
+
+			<p>
+				I worked on a solution to get metrics out of Java server-side applications living on Amazon EC2 instances into SignalFx.
+				We built the solution using collectd to send metrics to SignalFx and crafted libraries and tools to enable Java services
+				to easily integrate with SignalFx and leverage its capabilities.
+			</p>
+
+			<p>
+				While that solution was cranking up into production mode, the technical team started designing the second phase of
+				the project: provide a metrics pipe to SignalFx for Javascript and Lambda. Ten years ago this would have been a massive undertaking.
+				By leveraging the power of AWS we were able to have a basic proof-of-concept working in two weeks. Our solution provided a
+				Kinesis stream as the interface for developers to push metrics too and then used our own Lambdas to process the messages and send to SignalFx.
+				We made the solution robust by using SQS (with SNS) for "user errors" (e.g. a developer sent us bad data) and for "system errors" (e.g. we get repeated 500 errors from SignalFx).
+			</p>
+
+			<p>
+				My favorite part of this project was that we built all of the infrastructure for the solution using the Troposphere python library.
+				This provided two capabilities: we could setup and tear down all of the infrastructure for our solution with one command
+				(it took about 90 seconds on average to execute) and we could run the solution in any AWS account.
+				This second capability was important because at the time Nike was running about 40 AWS accounts (and adding more) and
+				having the ability to stand our solution up in any account allowed us to set well defined service levels for the pipe my
+				team operated while giving others that had more demanding requirements a solution they could operate themselves.
+			</p>
+
+			<p>
+				Technically, this project was a lot of fun and I learned a ton about the investment and returns on automating infrastructure.
+				It was also interesting and challenging to dive into the world of doing proper CI/CD on serverless architectures. We
+				were able to get about 90% of the way to production-ready MVP when I left the swoosh for other opportunities.
+			</p>
+
+			<h2>Big Data, 2016</h2>
+
+			<p>
+				At HP, PrintOS is a self-described "...operating system for Print Service Providers (PSPs) of all sizes...
+				cloud-based, IT-free, and open." I usually sum it up as "SaaS products for commercial print."
+				As the PrintOS team was ramping up for its first release, my team got involved in a new big data initiative. Basically,
+				the 3D printer effort was just getting underway with major funding within HP and the existing big data solution
+				for ink jet printers was antiquated and had a lot of cruft built up on it. The idea was to build a new big data solution from
+				the ground up, use the 3D printer business as a first customer and then eventually migrate ink jet onto the new solution as well.
+			</p>
+
+			<p>
+				I was one of a team of architects and developers that was tasked with investigating technologies and solutions,
+				designing the CI/CD pipeline and building a proof-of-concept to sell to executive stakeholders. The majority
+				of the investigation work was done near the end of 2015 and by early 2016 we had settled on an architecture
+				and started building dev and test infrastructure and demos. Our tech stack was comprised of several open source
+				projects and some AWS tools. We stood up Kafka, Apache Storm, S3, and Redshift for demo purposes and then we had
+				longer term plans to bring in AWS Glacier and Airbnb's Airflow project as well as some edge databases for OLTP data analytics.
+			</p>
+
+			<p>
+				My team also deployed Netflix's open-source pipeline management solution, Spinnaker to help us with the automated testing
+				and CI/CD of the solution. I was with HP long enough to see a working proof-of-concept demo and then I left for Nike.
+				This project was a great learning opportunity - I got to dive into so many big data technologies and really figure out what
+				was in that space for the first time. It was overwhelmingly at first but ultimately very satisfying to build
+				out. And by all reports (I still have friends working on this project) Spinnaker has worked out great for the team!
+			</p>
+
+			<h2>Elasticsearch Auth, 2015</h2>
+
+			<p>
+				As mentioned, at HP, PrintOS is a self-described "...operating system for Print Service Providers (PSPs) of all sizes...
+				cloud-based, IT-free, and open." I usually sum it up as "SaaS products for commercial print."
+			</p>
+
+			<p>
+				As HP split up and management and processes were in turmoil, my team was tasked with building the "Search Service" for PrintOS.
+				There were two primary problems to solve:
+				<ol>
+					<li>Provide search capabilities fast enough for typeahead responsiveness to all PrintOS user experiences.</li>
+					<li>Implement enterprise, multi-tenant auth in front of it.</li>
+				</ol>
+			</p>
+
+			<p>(1) was fairly straightforward to execute using Elasticsearch "out of the box" (we looked at a couple of options but Elasticsearch was a clear winner for our purposes).
+				(2) was complicated because at the time Elasticsearch really didn't support any kind of scalable authorization mechanisms at that time. Our high level requirements were to:
+				<ul>
+					<li>Authenticate user requests to Elasticsearch</li>
+					<li>Authorize users requests to specific indexes and documents in Elasticsearch based on organization and role.</li>
+					<li>Allow organizations to share documents i.e. authorize some users to view some documents in some other orgs.</li>
+				</ul>
+			</p>
+
+			<p>
+				Using the Play Framework we wrote what we referred to as an "authorization proxy" (auth-proxy) service that was deployed in
+				front of Elasticsearch. The auth-proxy used MySQL to maintain the authorization relationships to the data held in Elasticsearch.
+				When a request came into the Search Service (our auth-proxy sitting in front of Elasticsearch),
+				we would do a look up in our DB to see what indexes and documents the user was authorized to search and then reject or fulfill the request based on the result.
+			</p>
+
+			<p>
+				This was the first project where I was part of the team that did 100% dev ops. We had been doing automated testing and
+				CI/CD for a couple of years at this point but throughout the Rover project we worked primarily with a central ops team
+				that did most of the infrastructure work. When we started on the Search Service we were determined to run our own infrastructure and got management support to do so. It worked out great and I've never looked back - I've been a participant and fan of dev ops on every project since.
+			</p>
+
+			<p>
+				This was also my first experience with Elasticsearch and we ended up adopting the full ELK stack to do monitoring and alerting as well.
+				Pretty good tools and a great learning experience being involved with search. We successfully deployed the project to AWS and the project was live in production when I left HP in 2016.
+			</p>
+
+			<h2>Rover, 2012-2015</h2>
+
+			<p>
+				Rover was the internal project name for HP's "Print On Demand" publishing platform.
+				It was another strategy that was pursued early on in the scheduled-print-delivery saga (as described in the Beachhead project below)
+				and was initially built as a Ruby monolith. Coincidentally, this project was getting started right around the time I was hired to work on Books On-Demand.
+			</p>
+
+			<p>
+				The lab I was a part of was tasked with coalescing around one big idea and so with my team in the mix, about 40 or so developers at the Corvallis HP site were dedicated to building out the Rover "scheduled delivery platform".  The Rover project (as a Ruby monolith using MySQL) had been incubating for a while and a few months before I joined, the decision was made to expand the scope of the project and to refactor the monolith into a SOA written in Scala using MongoDB.
+			</p>
+
+			<p>
+				From a technical standpoint, the architecture we were pursuing was, in its simplest form, a content delivery pipeline. There were three primary development teams that built, maintained and extended the ecosystem of services that comprised the content pipeline and we were organized to address three big buckets of functionality: content ingestion, workflow engine, and content delivery. My team worked almost exclusively on the content ingestion side of the pipe.
+			</p>
+
+			<p>
+				Early on we had two primary use cases to solve: allow publishers to get content into the system and provide access to the content and content metadata to downstream systems (workflow and content delivery). Because my team needed to build a web UX for publishers to put content into the system, our first task was identifying a web framework to use. We evaluated a couple and jumped in on the Play Framework. Relative to Java-only frameworks I had been using, Play looked lightweight (and it is, just not as lightweight as Express for Node, for example) but what I really liked about it was the way that it did away with the heavyweight Java servlet API layer. The servlet API (in those days) had always bothered me because I couldn't get rid of the nagging idea that all the classes required to interface with the web just shouldn't be necessary. As the Play docs said at the time (paraphrasing), "Java created an API abstraction for the web. This was a mistake because the web is more important than Java." Nailed it. I was sold.
+			</p>
+
+			<p>
+				We ran with the Play Framework and the whole team started climbing the Scala learning curve. On the front end we were using Play's template engine, jQuery and Bootstrap. On the backend we used MongoDB for metadata and S3 for content and all of our services were running on AWS EC2. Initially we were using RabbitMQ for messaging across services but given the operational complexity of it and our centralized ops team lack of experience, we ended up migrating away from Rabbit and ultimately adopted Akka Remote for distributed messaging.
+			</p>
+
+			<p>
+				This project was one of the highlights of my career for several reasons:
+				<ul>
+					<li>I worked with some phenomenal people.</li>
+					<li>Had the opportunity to develop a micro-service architecture.</li>
+					<li>Built a user-facing UX for the first time since my early career.</li>
+					<li>Learned a whole lot about automated testing, CI/CD, AWS, REST APIs, architecting enterprise solutions, MongoDB (and DBs generally), and Agile.</li>
+					<li>Got to try out the Scaled Agile Framework.</li>
+					<li>Learned Scala! I was infatuated so I wrote a blog post for HP's software dev blog about Scala.</li>
+				</ul>
+			</p>
+
+			<p>
+				The software was already live in production when we started and we were delivering content and supporting publishers putting content into the system over the life of the project. At the peak of success, we had over 500,000 subscribers and had been running in production with no major outages or defects for over two and a half years. But following a now familiar pattern, this project was shuttered during the shuffle that occurred due to the HP split. This project was really my introduction to modern software development in particular, SaaS in AWS and I'll always be grateful to be a part of the team that was really pushing the software envelope in a traditional hardware company.
+			</p>
+
+			<h2>Beachhead, 2011-2012</h2>
+
+			<p>
+				HP pivoted my team to build a consumer facing desktop application to enabled scheduled printing. The cool part about this project was that the application was really just responsible for scheduling print jobs but the UI to browse content and manage scheduling was a hosted web UX that talked to the locally installed application over HTTP.
+			</p>
+
+			<p>
+				The essence of this project fell out of HP's larger desire to build a viable "publishing platform" where customers could sign up to have content delivered on a regular basis to their home printer. The canonical use case for this type of service was a customer that wanted a daily crossword puzzle delivered to their printer every day. But basically we were after anything that could be printed that had value as print (over digital) - children's coloring pages, paper airplane making kits, and coupons were some of the big hits.
+			</p>
+
+			<p>
+				HP was approaching the publishing-platform solution from multiple angles with multiple strategies and the "Beachhead" project was one of those strategies. The tech stack for the installed app was Java using embedded Jetty and WinZip for an installer. For the UX: JSP, HTML, CSS, jQuery and Javascript. This was well before push notifications and browser storage anywhere near the level we have now so we thought it was pretty cool that we could essentially have a distributed database hosted by our users and with full access to the OS. All through a web UI.
+			</p>
+
+			<p>
+				From a tech standpoint it was a unique and cool project. I learned a lot about CORS as well as getting my first professional look at Java. And I was recently awarded a patent that I wrote while on this project. I wrote up several patents while at HP but this is the first one that has been awarded - good times!
+			</p>
+
+			<p>
+				We finished the first version of this product, buttoned it up and shelved it in favor of moving to work on Rover... the fully realized SaaS version of a publishing-platform that HP had been looking for.
+			</p>
+
+			<h2>Books On-Demand, 2009-2011</h2>
+
+			<p>
+				At Hewlett-Packard (HP), the project I was hired to work on was an "on demand book publishing kiosk" solution. The idea was a customer could walk into a college campus book store or a Barnes & Noble and have a complete, high-quality paper back book printed in 5 minutes. My team wrote the software that drove the order management queue and managed print jobs. We also built a UI and service to store the book data and deliver the content when ordered by a customer.
+			</p>
+
+			<p>
+				The project was done entirely using .NET, written in C#. It was a success from a operational/tech standpoint - we deployed several beta-versions of the kiosk to college campuses around the US as well as to Powell's Books in downtown Portland. We ran them for several months and ultimately we even got a handshake deal with a Barnes & Noble VP to build 10 kiosks as a pilot. However, the whole program unraveled when neither HP nor Barnes & Noble wanted to front the capital cost to setup the kiosks.
+			</p>
+
+
+			<h2>RealFlight, 2004-2009</h2>
+
+			<p>Working with Knife Edge Software, built several major features for RealFlight, an R/C plane flight simulator. When I first joined out of college I was doing a bunch of Python scripts for automated testing but over the five years, the majority of development was in C++. We used Visual Studio and Perforce as our primary dev tools and a whole bunch of DirectX libraries and the C++ Standard Library.</p>
+
+			I will never forget the guys I worked with at Knife Edge. A few are still there pushing out releases on a regular basis and, watching from afar, it looks like they've managed to stay relevant over the years.
+
+		</div>
+
+	</div>
 </body>
