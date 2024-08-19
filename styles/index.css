@@ -95,3 +95,16 @@ a, a:visited {
 h2 {
 	margin-top: 32px;
 }
+
+pre {
+	background-color: #f4f4f4;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.multi-line-code {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: left;
+	align-items: start;
+}
